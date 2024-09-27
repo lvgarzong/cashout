@@ -36,7 +36,7 @@ El sistema está compuesto por varios servicios:
     "name": "John Doe",
     "balance": 100.0
   }
-
+  ```
   - **Ejemplo de Respuesta**:
   ```json
   {
@@ -44,14 +44,14 @@ El sistema está compuesto por varios servicios:
     "name": "John Doe",
     "balance": 100.0
   }
-
+  ```
 - **PUT /users/{idUser}/balance**: Actualiza el balance de un usuario.
   - **Ejemplo de Request**:
   ```json
   {
     "amount": 50.0
   }
-
+  ```
   - **Ejemplo de Respuesta**:
   ```json
   {
@@ -59,7 +59,7 @@ El sistema está compuesto por varios servicios:
     "name": "John Doe",
     "balance": 150.0
   }
-
+  ```
 
 ### Cashout Endpoints
 - **POST /cashouts**: Crea un nuevo cashout para un usuario.
@@ -69,7 +69,7 @@ El sistema está compuesto por varios servicios:
     "userId": "1",
     "amount": 50.0
   }
-
+  ```
   - **Ejemplo de Respuesta**:
   ```json
   {
@@ -77,7 +77,7 @@ El sistema está compuesto por varios servicios:
     "name": "John Doe",
     "balance": 50.0
   }
-
+  ```
   - **GET /cashouts/user/{userId}**: Obtiene todos los cashouts realizados por un usuario específico.
   - **Ejemplo de Respuesta**:
   ```json
@@ -102,7 +102,7 @@ El sistema está compuesto por varios servicios:
     "userId": "1",
     "amount": 50.0
   }
-
+  ```
   - **Ejemplo de Respuesta**:
   ```json
   {
@@ -134,4 +134,5 @@ El sistema está compuesto por varios servicios:
 
 El diagrama de secuencia a continuación muestra el flujo de las operaciones para un cashout. El usuario inicia solicitando un cashout, el sistema verifica el balance del usuario, realiza la actualización del balance, llama a un microservicio externo de pagos y finalmente crea un registro de cashout.
 
+![image](https://github.com/user-attachments/assets/86ef652b-a080-4101-a6c0-79393c68bcc5)
 
