@@ -109,7 +109,7 @@ El sistema está compuesto por varios servicios:
     "userId": "1",
     "paymentStatus": "approved"
   }
-
+  ```
   ### Transaction History Endpoints
 - **GET /transaction-history/user/{userId}**: Obtiene el historial de transacciones de un usuario específico.
  
